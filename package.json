@@ -1,0 +1,57 @@
+{
+  "name": "aca-premium-tax-credit-calculator-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the 2026 ACA premium tax credit: expired enhanced subsidies, 400% FPL cliff, Rev. Proc. 2025-25 table, FPL and APTC repayment rules.",
+  "type": "module",
+  "bin": {
+    "aca-premium-tax-credit-calculator-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "DATA_SOURCES.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "aca",
+    "affordable-care-act",
+    "premium-tax-credit",
+    "obamacare",
+    "aca-subsidy",
+    "federal-poverty-level",
+    "health-insurance",
+    "subsidy-cliff",
+    "aptc",
+    "form-8962"
+  ],
+  "author": "theluckystrike",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp.git"
+  },
+  "homepage": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp",
+  "mcpName": "io.github.theluckystrike/aca-premium-tax-credit-calculator-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.40.0"
+  }
+}

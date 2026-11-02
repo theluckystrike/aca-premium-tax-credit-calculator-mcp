@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.theluckystrike/aca-premium-tax-credit-calculator-mcp",
+  "title": "ACA Premium Tax Credit Calculator",
+  "description": "2026 ACA premium tax credit: expired enhanced subsidy, 400% FPL cliff, FPL, APTC repayment rules.",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp",
+  "repository": {
+    "url": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aca-premium-tax-credit-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
